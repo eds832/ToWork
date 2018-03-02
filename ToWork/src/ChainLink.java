@@ -22,7 +22,7 @@ public class ChainLink {
 			ChainLink leftLink = this.left;
 			ChainLink rightLink = this.right;
 			while (leftLink != null) {
-				if (leftLink == this) {
+				if (leftLink == rightLink) {
 					isLoop = true;
 					break;
 				}
